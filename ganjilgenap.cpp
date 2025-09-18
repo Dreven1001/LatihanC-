@@ -9,12 +9,13 @@ int main() {
     srand(time(0));
 
     int x; 
-    // int score = 0;
+    int score = 0;
     int mbarang = rand() % 2;
 
-    cout << "== Game tebak tebak angka ganjil genap ==";
-    cout << "Round 1";
-    cout << "Tebaklah ganjil atau genap\n0. Ganjil\n1. Genap\nMasukkan pilihanmu: ";
+    cout << "\n== Game tebak tebak angka ganjil genap ==";
+    cout << "\nRound 1";
+    cout << "\nScore: 0";
+    cout << "\nTebaklah ganjil atau genap\n0. Ganjil\n1. Genap\nMasukkan pilihanmu: ";
     cin >> x;
 
     if(cin.fail()) { 
@@ -27,7 +28,16 @@ int main() {
         // score++;
     } else {
         cout << "Kamu kalah!: " << mbarang;
+        return 0;
     }
+
+    cout << "\n== Game tebak tebak angka ganjil genap ==";
+    cout << "\nRound 2";
+    cout << "\nScore: " << score + 10;
+    cout << "\nTebaklah ganjil atau genap\n0. Ganjil\n1. Genap\nMasukkan pilihanmu: ";
+    cin >> x;
+
+    // Lanjutno ngisore
 
     return 0;
 }
